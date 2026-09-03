@@ -1,0 +1,17 @@
+TAP version 14
+# Subtest: GET /api/v1/health route
+    ok 1 - returns a status code of 200
+    ok 2 - status is healthy
+    ok 3 - database is ok
+    ok 4 - redis is ok
+    ok 5 - timestamp is present
+    1..5
+ok 1 - GET /api/v1/health route # time=166.687ms
+
+# Subtest: GET /api/v1/profile protected route without token
+    ok 1 - returns a status code of 401
+    ok 2 - Correct error message
+    1..2
+ok 2 - GET /api/v1/profile protected route without token # time=16.643ms
+
+1..2

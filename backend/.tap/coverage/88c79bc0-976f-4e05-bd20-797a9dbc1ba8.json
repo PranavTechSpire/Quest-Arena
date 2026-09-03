@@ -1,0 +1,316 @@
+{
+  "result": [
+    {
+      "scriptId": "1023",
+      "url": "file:///C:/Users/Pranav/.gemini/antigravity-ide/scratch/upsc-mpsc-prep-portal/backend/src/services/ai.service.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2481,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "AIService",
+          "ranges": [
+            {
+              "startOffset": 112,
+              "endOffset": 432,
+              "count": 1
+            },
+            {
+              "startOffset": 324,
+              "endOffset": 428,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "generateQuestion",
+          "ranges": [
+            {
+              "startOffset": 512,
+              "endOffset": 1910,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "generateEmbedding",
+          "ranges": [
+            {
+              "startOffset": 1984,
+              "endOffset": 2449,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1118",
+      "url": "file:///C:/Users/Pranav/.gemini/antigravity-ide/scratch/upsc-mpsc-prep-portal/backend/src/config/env.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 738,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1126",
+      "url": "file:///C:/Users/Pranav/.gemini/antigravity-ide/scratch/upsc-mpsc-prep-portal/backend/src/routes/api/v1/curator.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 915,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "curatorRoutes",
+          "ranges": [
+            {
+              "startOffset": 79,
+              "endOffset": 881,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1127",
+      "url": "file:///C:/Users/Pranav/.gemini/antigravity-ide/scratch/upsc-mpsc-prep-portal/backend/src/controllers/curator.controller.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2336,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "CuratorController",
+          "ranges": [
+            {
+              "startOffset": 98,
+              "endOffset": 213,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "generateQuestion",
+          "ranges": [
+            {
+              "startOffset": 217,
+              "endOffset": 1166,
+              "count": 1
+            },
+            {
+              "startOffset": 749,
+              "endOffset": 842,
+              "count": 0
+            },
+            {
+              "startOffset": 995,
+              "endOffset": 1162,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getPendingQuestions",
+          "ranges": [
+            {
+              "startOffset": 1170,
+              "endOffset": 1549,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "approveQuestion",
+          "ranges": [
+            {
+              "startOffset": 1553,
+              "endOffset": 2296,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1128",
+      "url": "file:///C:/Users/Pranav/.gemini/antigravity-ide/scratch/upsc-mpsc-prep-portal/backend/src/services/generation.service.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2925,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "GenerationService",
+          "ranges": [
+            {
+              "startOffset": 131,
+              "endOffset": 291,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "generateAndSave",
+          "ranges": [
+            {
+              "startOffset": 395,
+              "endOffset": 2885,
+              "count": 1
+            },
+            {
+              "startOffset": 900,
+              "endOffset": 998,
+              "count": 0
+            },
+            {
+              "startOffset": 1294,
+              "endOffset": 1404,
+              "count": 0
+            },
+            {
+              "startOffset": 1632,
+              "endOffset": 1639,
+              "count": 0
+            },
+            {
+              "startOffset": 1684,
+              "endOffset": 1694,
+              "count": 0
+            },
+            {
+              "startOffset": 2083,
+              "endOffset": 2144,
+              "count": 0
+            },
+            {
+              "startOffset": 2421,
+              "endOffset": 2483,
+              "count": 0
+            },
+            {
+              "startOffset": 2674,
+              "endOffset": 2875,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1129",
+      "url": "file:///C:/Users/Pranav/.gemini/antigravity-ide/scratch/upsc-mpsc-prep-portal/backend/src/services/validation.service.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2299,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "ValidationService",
+          "ranges": [
+            {
+              "startOffset": 1117,
+              "endOffset": 1171,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "validateFormat",
+          "ranges": [
+            {
+              "startOffset": 1250,
+              "endOffset": 1493,
+              "count": 1
+            },
+            {
+              "startOffset": 1355,
+              "endOffset": 1472,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "checkDuplicate",
+          "ranges": [
+            {
+              "startOffset": 1617,
+              "endOffset": 2259,
+              "count": 1
+            },
+            {
+              "startOffset": 1907,
+              "endOffset": 2036,
+              "count": 0
+            },
+            {
+              "startOffset": 2071,
+              "endOffset": 2217,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 41466.167706,
+  "source-map-cache": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "questarena-backend",
+  "version": "1.0.0",
+  "description": "Backend for QuestArena",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "tap test/**/*.test.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@google/genai": "^2.19.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "ajv": "^8.20.0",
+    "dotenv": "^16.4.5",
+    "env-schema": "^8.0.0",
+    "fastify": "^4.28.1",
+    "ioredis": "^5.4.1",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "sinon": "^22.1.0",
+    "tap": "^18.7.2"
+  }
+}

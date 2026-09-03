@@ -1,0 +1,9 @@
+TAP version 14
+# Subtest: Curator /generate endpoint (Mocked AI)
+    ok 1 - should be equal
+    ok 2 - should be equal
+    ok 3 - should be equal
+    1..3
+ok 1 - Curator /generate endpoint (Mocked AI) # time=243.691ms
+
+1..1
