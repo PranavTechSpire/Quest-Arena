@@ -45,7 +45,7 @@ Constraints:
       const text = response.text;
       return JSON.parse(text);
     } catch (err) {
-      this.fastify.log.error('Gemini generateContent error:', err);
+      this.fastify.log.error(`Gemini generateContent error: ${err.message}`, err);
       throw new Error(`Failed to generate question: ${err.message}`);
     }
   }
