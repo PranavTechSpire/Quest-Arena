@@ -20,6 +20,16 @@ async function run() {
   
   // We don't have a "curator" id since this is a cron job. We'll use a hardcoded UUID or let the DB default it if it's nullable.
   // Actually, created_by requires a valid UUID. Let's get the first user in the system to attribute it to, or leave it null if allowed.
+  if (!fastify.supabaseAdmin) {
+    fastify.log.error('❌ Missing SUPABASE_SERVICE_ROLE_KEY! Please ensure GitHub Secrets are added correctly.');
+    process.exit(1);
+  }
+  
+  if (!require('../src/config/env').GEMINI_API_KEY) {
+    fastify.log.error('❌ Missing GEMINI_API_KEY! Please ensure GitHub Secrets are added correctly.');
+    process.exit(1);
+  }
+
   let adminId = null;
   const { data: user } = await fastify.supabaseAdmin.from('users').select('id').limit(1).single();
   if (user) adminId = user.id;
