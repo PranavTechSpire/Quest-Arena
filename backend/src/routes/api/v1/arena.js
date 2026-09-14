@@ -107,12 +107,14 @@ async function arenaRoutes(fastify, options) {
     
     // Fetch 5 random questions for this exam
     // In a real app, use a randomized RPC, but for MVP we use .limit() on approved questions
-    const { data: questions } = await fastify.supabaseAdmin
+    const { data: allQuestions } = await fastify.supabaseAdmin
       .from('questions')
       .select('id')
       .eq('exam', match.exam)
-      .eq('status', 'approved')
-      .limit(5);
+      .eq('status', 'approved');
+      
+    // Shuffle and select 5 questions
+    const questions = (allQuestions || []).sort(() => 0.5 - Math.random()).slice(0, 5);
       
     if (!questions || questions.length === 0) {
       return reply.status(400).send({ error: 'Not enough questions available' });

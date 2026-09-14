@@ -42,14 +42,16 @@ async function questsRoutes(fastify, options) {
       .from('questions')
       .select('id, exam, subject, question_text, options, difficulty, source_reference')
       .eq('exam', exam)
-      .eq('status', 'approved') // Only approved questions
-      .limit(10);
+      .eq('status', 'approved'); // Fetch all approved questions
       
     if (attemptedIds.length > 0) {
       query = query.not('id', 'in', `(${attemptedIds.join(',')})`);
     }
     
-    const { data: questions, error: qErr } = await query;
+    const { data: allQuestions, error: qErr } = await query;
+    
+    // Shuffle and pick 10 random questions
+    const questions = (allQuestions || []).sort(() => 0.5 - Math.random()).slice(0, 10);
     
     if (qErr) {
       fastify.log.error('Failed fetching daily quests:', qErr);
