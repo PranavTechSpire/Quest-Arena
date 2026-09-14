@@ -11,6 +11,6 @@ class Env {
   
   static const String apiUrl = String.fromEnvironment(
     'API_URL',
-    defaultValue: 'http://localhost:3000/api/v1',
+    defaultValue: 'https://quest-arena-kw3diso90-chavanpranav3103-8406s-projects.vercel.app/api/v1',
   );
 }
